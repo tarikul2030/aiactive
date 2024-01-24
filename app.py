@@ -16,8 +16,8 @@ def predict():
     json_ = request.json
     query_df = pd.DataFrame(json_)
     query = pd.get_dummies(query_df)
-    prediction = model.predict(query)
-    return jsonify({'prediction': prediction.tolist()})
+    predictiond = model.predict(query)
+    return jsonify({'predictiond': predictiond.tolist()})
 
 
 # Run the Flask application
